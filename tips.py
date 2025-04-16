@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 def display_tips_data():
     file_path = "tips.csv" 
-    tips_data = pd.read_csv(file_path)
+    tips_data = pd.read_csv(file_path, index_col=0)
 
     st.subheader("Данные о чаевых")
     st.write(tips_data)
